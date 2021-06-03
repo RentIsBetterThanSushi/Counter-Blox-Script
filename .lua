@@ -1139,13 +1139,13 @@ MiscellaneousTabCategoryMain:AddButton("Invisibility [dont defuse]", function() 
 	LocalPlayer.Character.HumanoidRootPart.CFrame = oldpos
 end) end)
 
-MiscellaneousTabCategoryMain:AddButton("Vote Kick Yourself", function()
+MiscellaneousTabCategoryMain:AddButton("vote kick urself :3", function()
 	game.ReplicatedStorage.Events.Vote:FireServer(game.Players.LocalPlayer.Name)
 end)
 
-MiscellaneousTabCategoryMain:AddToggle("Anti Vote Kick", false, "MiscellaneousTabCategoryMainAntiVoteKick")
+MiscellaneousTabCategoryMain:AddToggle("anti votekick system", false, "MiscellaneousTabCategoryMainAntiVoteKick")
 
-MiscellaneousTabCategoryMain:AddToggle("Anti Spectators", false, "MiscellaneousTabCategoryMainAntiSpectators")
+MiscellaneousTabCategoryMain:AddToggle("anti spectators", false, "MiscellaneousTabCategoryMainAntiSpectators")
 
 MiscellaneousTabCategoryMain:AddToggle("Unlock Reset Character", false, "MiscellaneousTabCategoryMainUnlockResetCharacter", function(val)
 	game:GetService("StarterGui"):SetCore("ResetButtonCallback", val)
@@ -1153,7 +1153,7 @@ end)
 
 MiscellaneousTabCategoryMain:AddToggle("Unlock Shop While Alive", false, "MiscellaneousTabCategoryMainUnlockShopWhileAlive")
 
-MiscellaneousTabCategoryMain:AddToggle("Show Spectators", false, "MiscellaneousTabCategoryMainShowSpectators", function(val)
+MiscellaneousTabCategoryMain:AddToggle("show spectators", false, "MiscellaneousTabCategoryMainShowSpectators", function(val)
 	ShowSpectators = val
 	
 	library.base.Spectators.Visible = val
@@ -1523,7 +1523,7 @@ SettingsTabCategoryMain:AddButton("Server Rejoin", function()
     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
 end)
 
-SettingsTabCategoryMain:AddButton("have the word Nigger copied to ur clipboard", function()
+SettingsTabCategoryMain:AddButton("copy the word nigger", function()
 	setclipboard("nigger")
 end)
 
@@ -1650,7 +1650,7 @@ SettingsTabCategoryCredits:AddLabel("rent#8392")
 
 SettingsTabCategoryCredits:AddLabel("")
 
-SettingsTabCategoryCredits:AddLabel("I hate niggers, I hate spicks, I hate faggots, I hate jews.")
+SettingsTabCategoryCredits:AddLabel("I hate niggers, and I hate spicks.")
 
 
 
